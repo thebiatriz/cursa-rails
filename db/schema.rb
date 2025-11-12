@@ -10,5 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 0) do
+ActiveRecord::Schema[8.1].define(version: 2025_11_12_211627) do
+  create_table "customers", force: :cascade do |t|
+    t.date "birthday"
+    t.datetime "created_at", null: false
+    t.string "email"
+    t.string "name"
+    t.text "obs"
+    t.datetime "updated_at", null: false
+  end
 end
