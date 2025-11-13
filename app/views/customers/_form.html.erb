@@ -12,7 +12,7 @@
   <% end %>
 
   <div>
-    <%= form.label :name, style: "display: block" %>
+    <%= form.label :nome, style: "display: block" %>
     <%= form.text_field :name %>
   </div>
 
@@ -22,7 +22,7 @@
   </div>
 
   <div>
-    <%= form.label :birthday, style: "display: block" %>
+    <%= form.label :nascimento, style: "display: block" %>
     <%= form.date_field :birthday %>
   </div>
 
@@ -32,6 +32,6 @@
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit "Atualizar Usuário" %>
   </div>
 <% end %>
