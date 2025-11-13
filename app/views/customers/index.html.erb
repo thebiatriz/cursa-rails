@@ -2,8 +2,14 @@
 
 <% content_for :title, "Customers" %>
 
-<h1>Customers</h1>
+<h1>Clientes</h1>
+<%# teste dos símbolos do erb %>
+<% a = "Ruby" %>
+<% b = "Rails" %>
 
+<%= "Lista feita com #{a} on #{b}" %>
+
+<br><br>
 <div id="customers">
   <% @customers.each do |customer| %>
     <%= render customer %>
