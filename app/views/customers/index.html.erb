@@ -14,9 +14,9 @@
   <% @customers.each do |customer| %>
     <%= render customer %>
     <p>
-      <%= link_to "Show this customer", customer %>
+      <%= link_to "Ver detalhes desse usuário", customer %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New customer", new_customer_path %>
+<%= link_to "Novo usuário", new_customer_path %>
