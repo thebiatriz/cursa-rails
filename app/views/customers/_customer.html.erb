@@ -2,13 +2,13 @@
   <div class="card-body">
     <div class="row">
       <div class="col-md-6">
-        <p><strong><%= Customer.human_attribute_name(:name) %></strong> <%= customer.name %></p>
-        <p><strong><%= Customer.human_attribute_name(:email) %></strong> <%= customer.email %></p>
+        <p><strong><%= Customer.human_attribute_name(:name) %>: </strong> <%= customer.name %></p>
+        <p><strong><%= Customer.human_attribute_name(:email) %>: </strong> <%= customer.email %></p>
       </div>
 
       <div class="col-md-6">
-        <p><strong><%= Customer.human_attribute_name(:birthday) %></strong> <%= l(customer.birthday) %></p>
-        <p><strong><%= Customer.human_attribute_name(:obs) %></strong> <%= customer.obs %></p>
+        <p><strong><%= Customer.human_attribute_name(:birthday) %>: </strong> <%= l(customer.birthday) if customer.birthday.present? %></p>
+        <p><strong><%= Customer.human_attribute_name(:obs) %>: </strong> <%= customer.obs.presence || "Sem observação" %></p>
       </div>
     </div>
   </div>
