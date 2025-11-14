@@ -1,11 +1,10 @@
-<% content_for :title, "New customer" %>
 
-<h1>Novo usuário</h1>
+<div class="d-flex justify-content-between align-items-center mb-4">
+  <h1><%= t('.title') %></h1>
+
+  <div>
+    <%= link_to t('.back_link'), customers_path, class: "btn btn-outline-secondary" %>
+  </div>
+</div>
 
 <%= render "form", customer: @customer %>
-
-<br>
-
-<div>
-  <%= link_to "Voltar para os usuários", customers_path %>
-</div>

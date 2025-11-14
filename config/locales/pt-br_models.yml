@@ -1,0 +1,37 @@
+pt-BR:
+  activerecord:
+    models:
+      customer: Cliente
+    attributes:
+      customer:
+        name: "Nome"
+        email: "Email"
+        birthday: "Nascimento"
+        obs: "Observação"
+
+  customers:
+    show:
+      edit: "Editar esse usuário"
+      back: "Voltar para os usuários"
+      delete: "Deletar esse usuário"
+      confirm_delete: "Você tem certeza?"
+
+    index:
+      title: "Clientes"
+      show_link: "Ver detalhes desse usuário"
+      new_link: "Novo usuário"
+      back_home: "Voltar para a home"
+
+    edit:
+      title: "Editando usuário"
+      show_link: "Ver detalhes desse usuário"
+      back_link: "Voltar para os usuários"
+
+    new:
+      title: "Novo usuário"
+      back_link: "Voltar para os usuários"
+
+  welcome:
+    index:
+      title: "Bem-vindo à tela inicial"
+      customers_link: "Cadastro de Clientes"

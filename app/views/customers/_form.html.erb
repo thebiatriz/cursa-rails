@@ -11,27 +11,29 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :nome, style: "display: block" %>
+  <div class="d-grid gap-3">
+    <div>
+    <%= form.label :name, style: "display: block" %>
     <%= form.text_field :name %>
-  </div>
+    </div>
 
-  <div>
+    <div>
     <%= form.label :email, style: "display: block" %>
     <%= form.text_field :email %>
-  </div>
+    </div>
 
-  <div>
-    <%= form.label :nascimento, style: "display: block" %>
+    <div>
+    <%= form.label :birthday, style: "display: block" %>
     <%= form.date_field :birthday %>
-  </div>
+    </div>
 
-  <div>
+    <div>
     <%= form.label :obs, style: "display: block" %>
     <%= form.textarea :obs %>
-  </div>
+    </div>
 
-  <div>
-    <%= form.submit "Atualizar Usuário" %>
+    <div class="mt-2">
+    <%= form.submit "Salvar", class: "btn btn-outline-primary" %>
+    </div>
   </div>
 <% end %>

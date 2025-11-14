@@ -1,4 +1,5 @@
-<h1> Teste de página INDEX na Welcome Controller </h1>
+<h1 class="fw-bold mb-4"> <%= t('.title') %> </h1>
 
-<h3><%= @test %> </h3>
-<%= link_to "Cadastro de Clientes", customers_path %>
+<h4 class="text-muted mb-4"><%= @course %></h4>
+
+<%= link_to t('.customers_link'), customers_path, class: "btn btn-outline-primary" %>
