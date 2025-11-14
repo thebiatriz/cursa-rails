@@ -2,21 +2,20 @@
 
 <% content_for :title, "Customers" %>
 
-<h1>Clientes</h1>
-<%# teste dos símbolos do erb %>
-<% a = "Ruby" %>
-<% b = "Rails" %>
+<div class="d-flex justify-content-between align-items-center mb-4">
+  <h1><%= t('.title') %></h1>
 
-<%= "Lista feita com #{a} on #{b}" %>
+  <div>
+    <%= link_to t('.back_home'), root_path, class: "btn btn-outline-secondary me-2" %>
+    <%= link_to t('.new_link'), new_customer_path, class: "btn btn-primary" %>
+  </div>
+</div>
 
-<br><br>
 <div id="customers">
   <% @customers.each do |customer| %>
     <%= render customer %>
     <p>
-      <%= link_to "Ver detalhes desse usuário", customer %>
+      <%= link_to t('.show_link'), customer %>
     </p>
   <% end %>
 </div>
-
-<%= link_to "Novo usuário", new_customer_path %>

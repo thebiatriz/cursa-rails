@@ -1,22 +1,15 @@
-<div id="<%= dom_id customer %>">
-  <div>
-    <strong>Nome:</strong>
-    <%= customer.name %>
-  </div>
+<div id="<%= dom_id customer %>" class="card">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-6">
+        <p><strong><%= Customer.human_attribute_name(:name) %></strong> <%= customer.name %></p>
+        <p><strong><%= Customer.human_attribute_name(:email) %></strong> <%= customer.email %></p>
+      </div>
 
-  <div>
-    <strong>Email:</strong>
-    <%= customer.email %>
+      <div class="col-md-6">
+        <p><strong><%= Customer.human_attribute_name(:birthday) %></strong> <%= l(customer.birthday) %></p>
+        <p><strong><%= Customer.human_attribute_name(:obs) %></strong> <%= customer.obs %></p>
+      </div>
+    </div>
   </div>
-
-  <div>
-    <strong>Nascimento:</strong>
-    <%= customer.birthday %>
-  </div>
-
-  <div>
-    <strong>Obs:</strong>
-    <%= customer.obs %>
-  </div>
-
 </div>
