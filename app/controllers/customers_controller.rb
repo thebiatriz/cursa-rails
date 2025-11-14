@@ -3,7 +3,7 @@ class CustomersController < ApplicationController
 
   # GET /customers or /customers.json
   def index
-    @customers = Customer.all
+    @customers = Customer.order(:name)
   end
 
   # GET /customers/1 or /customers/1.json
@@ -60,11 +60,11 @@ class CustomersController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_customer
-      @customer = Customer.find(params.expect(:id))
+       @customer = Customer.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.
     def customer_params
-      params.expect(customer: [ :name, :email, :birthday, :obs ])
+      params.require(:customer).permit(:name, :email, :birthday, :obs)
     end
 end

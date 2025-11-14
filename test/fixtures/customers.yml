@@ -1,13 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  email: MyString
+  name: Cliente Um
+  email: cliente1@example.com
   birthday: 2025-11-12
-  obs: MyText
+  obs: Observação 1
 
 two:
-  name: MyString
-  email: MyString
+  name: Cliente Dois
+  email: cliente2@example.com
   birthday: 2025-11-12
-  obs: MyText
+  obs: Observação 2
